@@ -1,0 +1,386 @@
+USERS PAGE
+The website name is hallyvestpay
+The website logo is logo.png
+The website favicon is favicon.png
+Be putting the logo in the suitable pages
+If a user that doesnt register or login enterd any page, it opens the page for them but they cant take any action
+
+Page1
+Register.php
+  At the top put this warning "Multiple Account are not Allowed"
+  Then user have to fill the following forms:
+  Firstname
+  Middle Name(optional)
+  Lastname
+  Username (must be compatible with the first name and last name)
+  Date of birth in manaul dd/mm/yyyy version (user must be at least 16 years old)
+  Phone Number
+  Referral code(optional)
+  Gmail
+  Password and Confirm Password.
+check box for "By siging up, you Strongly agrees to our Terms(terms.php) and policy(policy.php)
+A button which redirect the user to login.php if already have an account.
+If user registered with a referral code he/she will get a bonus of 200 naira
+  Then if user fill the form correctly and appropriately and then click "Register" button, it should display "Registration Successful" and redirect the user to home.php
+
+
+
+Page2
+For login.php
+The user will input his/her Username/email and password
+For those who didn't have an account yet make a button which will redirect them to register.php
+For those who forgot their password make a button called "Forget Password"
+If the user clicked the forget password button
+He/she will fill the following form for security purpose
+, Phone number and Date of birth.
+  If the user fill it correctly he/she can reset password.
+if the user has binded his account before, it add an advance form to also input Withdrawal PIN
+
+
+Page3
+For home.php
+By the left header corner will be the website logo, followed by the text "Welcome, Username" followed by the profile.php button represented by the profile picture uploaded by the user in profile.php but if not yet uploaded a profile picture, it should be represented by "👤" icon with notification.php represented by "🔔" if any user get notification, it shows the total unred notifications at the head of the bell, if the user click the bell icon, it make a drop down with the summary of the notification, if the user then clicked view all notifications, it takes the user to notification.php. 
+ At the right header corner will be the menu button.
+  When the menu button is clicked a window will pop out and in the window will include; 
+  Log out button(if clicked it will redirect the user to login.php)
+Delete Account button(if clicked another window will pop out and in the window will be "Are you sure you want to delete your account, This cannot be undone" then you will put two options "Delete" and "Cancel" if user clicked the "Delete" button the user account will be permanently deleted without any Information. But if clicked "Cancel" button Nothing will happen it will just close the window) 
+  Refer and earn button(if clicked it will redirect the user to refer.php)
+  Redeem Code(if clicked it will redirect the user to bonus.php)
+  My Account button(if clicked it redirect the user to account.php)
+
+
+Then make a div for the user balance(NGN)
+Then another div for the user referral code and referral link in copy and paste form
+
+The following will be in grid form, 
+Deposit button: deposit.php, deposit.png
+Withdraw button: withdraw.php, withdraw.png
+Invest button: invest.php, invest.png
+Contact Support button: support.php, support.png
+Transactions button: transactions.php, transactions.png
+Invest Record button: investrec.php, investrec.png
+Register button which will redirect the user to register.php
+Login button which makes the users to logout and will redirect the user to login.php
+
+Page4
+For profile.php
+User can upload a profile picture and if not yet uploaded a profile picture it should be represented by "👤" icon
+Then user can see his/her information 
+Username
+(half hidden)
+Date of birth(half hidden)
+Phone number(half hidden) 
+Gmail(half hidden) 
+Then make six buttons;
+The first button is "My account button" which will redirect the user to account.php
+One for Gmail changing, phone number changing, username changing one for password changing and one to go back home.
+If the user clicked the Gmail/phonenumber/usernme changing button he/she will input new Gmail/phonenumber/usernme  and then input his her password.
+
+If the user clicked Change password button he/she will input old password with new password and his/her withdrawal PIN
+
+
+
+Page5
+For account.php
+The user will bind his/her bank account details permanently.
+The user will select his/her bank
+Then input his/her Account number 
+Then input his/her account name
+Create four digits pin for withdrawal
+Then bind account button(if user clicked this button it will display a warg "Check your details Very well, you cannot change your bank details again" and if user clicked "bind" user will input Withdrawal Pin and Confirm Pin then it will permanently bind his/her Account details without changing, delete or add another account details.
+When the user left the page and come back it should display the account details
+
+
+Page6
+deposit.php
+The user will input amount to deposit 
+Minimum deposit is 500 naira
+Then clicked "Continue" button which redirect the user to bank.php
+While inputing, it calculate -25% charges, i.e if trying to deposit 1000, it calculates
+Youll receive 750 in your balance
+
+Page7
+Bank.php
+This is a page for the platform account details.
+Write "Note: You must put your username in in the Narration while transferring the money"
+Bank Name:Opay (copy and paste form)
+Account number:7075158977 (copy and paste form)
+Account name: Omowumi Ajadi (copy and paste form)
+Narration:Username (copy and paste form)
+Then a button which will redirect the user to review.php
+
+
+
+Page8
+Review.php
+In this page It gets the total amount the users inputed to deposit and ask to upload the screenshot. Then a button called "Submit review" which will redirect the user to review2.php and if the "Submit review" button is clicked it should show in the admindep.php that a user is about to deposit
+
+
+Page9
+Review2.php
+In this page, there will be 30 Seconds Countdown waiting for the admin to Approve of decline the transaction.
+If the admin has approved the transactions, it should display "Transaction Approved" and then redirect the user to home.php.
+If the admin declined the transaction, it should display "Transaction denied" and the reason why it was denied and then redirect the user to home.php
+After the Countdown;
+If the admin has neither approved nor declined the transaction, it should display"Transaction still pending" and then redirect the user to home.php
+
+
+Page10
+invest.php
+At the top  and the bottom of the page will be the text "⚠️ Some plan may Crash anytime ⚠️"
+Give Suitable Name for the following plan and suitable amount starting from #500
+vip2.png
+diamond.png
+Vipcard.pag
+dollarwallet.png
+dollarcoin.ping
+flower.png
+vip1.png
+invest1.png
+wallet.png
+And if any any plan has been crashed by the admin in incrash.php, users cannot be able to invest in the plan again until when the admin uncrash it back.
+Note: Users will earn +50% profit per plan after five days.
+
+Page11
+investrec.php
+There will be drop down of  three Categories at the top, and the
+Categories are;
+Current investment
+Expired/Claimed investment
+Crashed investment
+
+For Current investment 
+Users will see his/her on-going investment that are not yet been clamed or expired with the countdown of time remaining, after the countdown, users claim their profits.
+
+For Expired/Claimed investment
+User will see his/her claimed and expired plan.
+
+For Crashed investmest
+User will see the plan that he/she invested on but later crashed.
+
+For all investment
+User will see all the investment plan done, both the current, Crashed and expired investment
+
+NB: if any plan crashed, any users that invested in the Plan will not be able to get neither there invested money, nor profit, even if the plan later stay uncrash
+
+Page12
+for withdraw.php
+At the top will be 
+Withdrawal Level(level 1 to level 5)
+Refrees: (Total users referred)
+Active Refree: (totla users refers that has deposited at least #500)
+user will input amount to withdraw and Click "Continue" button which will redirect the user
+to "witrevphp" but if user have not yet bind Account, it should say " you have to bind your Bank Account first" and then redirect the user to account.php for account binding
+Any users who dont deposit cannot withdraw,
+Users only withdraw once (and the withdraw button got locked if the withdrawal was successful) until when they advance to the next level
+Under the continue button will be "Withdrawal Guide"
+So if user click the withdrawal guide it explains how withdrawal goes
+1. Deposit ₦500 to verify account.
+2. Each active referral unlocks **one** new withdrawal limit level.
+3. Your withdrawal limit increase by #500 if you refer one depositor, i.e if referred 3 users and they deposit, you will be able to withdraw #1,500
+4. If you reach 5 Deposited Referrals, you unlock Unlimited Withdrawals forever.
+For witrev.php
+ It will display user binded account and user will input his/her withdrawal pin and then click "Proceed" button which will redirect them to "withview.php" and when the button is clicked it will notify the adminwit.php that the user is about to withdraw
+
+
+Page13
+For withview.php
+  In this page, there will be 30 Seconds Countdown waiting for the admin to Approve of decline the transaction.
+If the admin has approved the transactions, it should display "Withdrawal Approved, you will be credited shortly" and then redirect the user to home.php.
+If the admin declined the transaction, it should display "Withdrawal denied, your money will be refunded back to your wallet" and the reason why it was denied and then redirect the user to home.php
+
+After the Countdown;
+If the admin has neither approved nor declined the transaction, it should display"Withdrawal still pending, you will be credited within 24 hours" and then redirect the user to home.php
+
+
+Page14
+Transactions.php
+At the top of this page will be 
+Categories, Status and Reason(for declined transactions)
+For categories options are:
+All categories 
+Deposit
+Withdrawal 
+Tasks
+Investment
+
+For status options are:
+All status 
+Approved 
+Declined
+Pending
+Reasons only display for declined status
+if users click Investment Category
+the status option will be
+Active 
+Crahed
+Claimed
+Page15
+support.php
+There will be
+About Us ( which will redirect users to about.php)
+Contact admin button
+Live chat button
+For contact admin button : when click, it will redirect the user to his/her Gmail app trying to send a message to "hallyvestpayteam@outlook.com"
+
+For live chat button: it will redirect the user to chatbot.php
+
+
+
+Page16
+Refer.php
+at the top will be total commision collected
+then total users referred, 
+then there will be a table 
+in the table will be list of users referred, wether active or banned
+for active users, if not claim add a claim button for them to claim button
+FOr banned users, it shows reasons for banned under it
+
+
+Page17
+bonus.php
+at the top will be Claim bonus via our social media
+Telegram and Facebook :(I will update the url later)
+user will paste the bonus code and receive the amount 
+
+Note: 
+If user is trying to use the code twice it should display " Code already been used"
+If user wants to use the code after it expires, it should display "Code already expired"
+If user trying to use wrong code, it should display "Invalid Code"
+
+chatbot.php
+This is the page that customers/users will talk with the website Ai and any conversation between any customers and the chatbot the adminchat.php will sees it 
+
+cancel.php
+this is the security page that will be added to register.php
+it check if users that are trying to have multiple account
+It detect them through
+Phone number
+Ip address
+email address
+
+for notification.php
+here is where users sees all notifications about all new refree and transactions around in the website
+
+loader.php
+this will be added to all pages
+it loads the pages 
+the website favicon fading in and out, with progress button
+it loads according to network speed
+app_download.php
+this pop up every 1 min in users page asking them to download the app
+hallyvestpay.apk
+
+FOR THE ADMIN PAGE
+
+page1
+adminlog.php
+This is the page that admin will see all users. At the top will be Categories and the Categories are
+All categories
+Referral
+Deposit
+Rich
+Withdrawal
+Invest
+
+For All Categories
+It will show the users From top One with their Total referal Total time of deposit, Total amount currently in their account, total time of withdraw and total time of invests.
+
+For Referral
+It will shows the users from top 1 of their total referrals and total Commissions Collected.
+
+For Deposit
+It will shows the users from top 1 of their total time of deposit highest  amount deposited lowest amount deposited, Total amount deposited.
+
+For rich
+It will show the user from top of their current amount
+
+For withdrawal
+It will shows the user from top of their total time of withdraw, Highest withdraw, Lowest withdraw and the total amount withdrawed
+
+For invest
+It will show the users from top 1 of their total plans Invested, All plans that the user hast invested in and the total time invested in each plan, profit earn on all the investments plans and the current plan invested.
+
+
+Page2
+adminuser.php
+This is the page where the admin will see every users informations, and the total users  registered,  At the top will be a search box for admin to Search for username.
+and beside them will be manage button (redirect to edituser.php)
+and then audit button (to usertrans.php)
+
+
+Page3
+ gene.php
+This is the page that the admin will generate the bonus Code, amount for the Code and the limit time for the Code to expire
+
+Page4
+edituser.php
+this is a page that admin can view all/every the users info
+ban and unban users
+any user banned will not be able to access dashboard anymore until he/she got unbanned
+edit/updates all/every of the user informations
+and admin can also gift user bonus
+
+
+Page5
+incrash.php
+This is where the admin crashes any plan and if a plan is crashed any users that have invested on the plan will loose their money and if the investments got uncrash back users that already invested on it before it crashed cannot earn their money back.
+
+
+Page6
+userban.php
+This is where the admin ban any user, the reason he/she was banned(optional), the screenshot of the of the reason why he/she was banned(optional)
+  Then if the ban button is clicked it will automatically ban the user, and the admin may also send it to the users Gmail if the user is not online.
+
+Page7
+adminchat.php
+ This is the page that the admin will see conversation that users has made with the website chatbot.
+and also add manual and auto toggle button, the default toggle is auto
+if the admi  toggle it to auto, the website bot will be replying to users automatically
+if the admin toggle it to manual, it is the admin that will be replying until the admin toggle it to auto back
+
+Page9
+userbon.php
+ This is where the admin can give any user bonuses
+
+Page10
+admintrans.php
+ This is where the admin sees all users transactions by clicking their name. After clicking the user name
+ At the top of the page will be 
+ Categories and Status
+ For categories options are:
+ All categories 
+ Deposit
+ Withdrawal 
+ Tasks
+ Investment
+For status options are:
+All status 
+Approved 
+Decline 
+Pending
+
+If declined, it will show the reason
+Page11
+account.php
+this is where admin see all the money in and out of the website, and how money flows in the website, 
+it also check if the company is loosing or gaining money, or if users are loosing or gaining money
+
+for usertrans.php
+admin will be able to see all the transactons of the user
+
+admin_not.php
+this is where admin too receive notifcations about if new users sign up for the website
+if a user want to deposit
+if a user want to withdraw
+and also if a user is chatting with chatbot
+
+send_not.php
+this is a page that admin can send notification to users or a particular user
+admin_gate.php
+this is the gate to get to admin pages, 
+it requres password before someone can get acces to the admin pages
+Passcode :abraham7075158977
+it lock the admin pages after 5 minutes of idle
+it also add the admin navigation pages at the top
+
